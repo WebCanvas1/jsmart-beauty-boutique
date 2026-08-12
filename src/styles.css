@@ -66,6 +66,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme inline {
+  --color-blush: var(--blush);
+  --color-sand: var(--sand);
+  --color-success: var(--success);
+}
+
 :root {
   --radius: 0.25rem;
   --background: oklch(0.99 0.005 60);
