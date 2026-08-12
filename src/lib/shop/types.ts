@@ -4,8 +4,8 @@ export interface Brand {
   id: ID;
   name: string;
   slug: string;
-  logo?: string;
-  description?: string;
+  logo?: string | undefined;
+  description?: string | undefined;
 }
 
 export interface Subcategory {
@@ -18,7 +18,7 @@ export interface Category {
   id: ID;
   name: string;
   slug: string;
-  image?: string;
+  image?: string | undefined;
   position: number;
   featured: boolean;
   subcategories: Subcategory[];
@@ -30,9 +30,9 @@ export interface ProductVariant {
   optionName: string;
   value: string;
   /** hex swatch for shade/colour selectors */
-  swatch?: string;
+  swatch?: string | undefined;
   stock: number;
-  priceDelta?: number;
+  priceDelta?: number | undefined;
 }
 
 export interface Product {
@@ -42,12 +42,12 @@ export interface Product {
   sku: string;
   brandId: ID;
   categorySlug: string;
-  subcategorySlug?: string;
+  subcategorySlug?: string | undefined;
   description: string;
   ingredients: string;
   howToUse: string;
   price: number;
-  salePrice?: number;
+  salePrice?: number | undefined;
   stock: number;
   backordersEnabled: boolean;
   images: string[];
@@ -65,7 +65,7 @@ export interface Product {
 export interface CartLine {
   id: string;
   productId: ID;
-  variantId?: ID;
+  variantId?: ID | undefined;
   quantity: number;
 }
 
@@ -73,7 +73,7 @@ export interface Address {
   firstName: string;
   lastName: string;
   line1: string;
-  line2?: string;
+  line2?: string | undefined;
   suburb: string;
   state: AustralianState;
   postcode: string;
@@ -107,10 +107,10 @@ export interface OrderItem {
   productId: ID;
   name: string;
   brand: string;
-  variant?: string;
+  variant?: string | undefined;
   quantity: number;
   unitPrice: number;
-  image?: string;
+  image?: string | undefined;
 }
 
 export interface Order {
@@ -127,7 +127,7 @@ export interface Order {
   paymentStatus: "Unpaid" | "Paid" | "Refunded";
   address: Address;
   createdAt: string;
-  promoCode?: string;
+  promoCode?: string | undefined;
 }
 
 export interface Review {
@@ -146,9 +146,9 @@ export interface Promotion {
   type: "percentage" | "fixed";
   value: number;
   minSpend: number;
-  startsAt?: string;
-  endsAt?: string;
-  usageLimit?: number;
+  startsAt?: string | undefined;
+  endsAt?: string | undefined;
+  usageLimit?: number | undefined;
   used: number;
   active: boolean;
 }
@@ -159,8 +159,8 @@ export interface Customer {
   password: string;
   firstName: string;
   lastName: string;
-  phone?: string;
-  address?: Address;
+  phone?: string | undefined;
+  address?: Address | undefined;
 }
 
 export interface PromoBanner {
