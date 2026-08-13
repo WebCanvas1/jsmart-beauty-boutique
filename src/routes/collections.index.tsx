@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CATEGORY_IMAGES } from "@/lib/shop/seed";
 import { useShop } from "@/lib/shop/store";
 
-export const Route = createFileRoute("/collections")({
+export const Route = createFileRoute("/collections/")({
   head: () => ({
     meta: [
       { title: "Shop All Beauty Collections | Jsmart Beauty" },
