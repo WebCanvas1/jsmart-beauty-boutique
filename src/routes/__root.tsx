@@ -115,11 +115,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Store",
+          "@type": "OnlineStore",
+          "@id": "https://jsmartbeauty.com.au/#store",
           name: "Jsmart Beauty",
+          alternateName: "Jsmart Beauty Australia",
+          url: "https://jsmartbeauty.com.au/",
           description:
             "Australian online destination for cosmetics, skincare and beauty essentials.",
-          areaServed: "AU",
+          areaServed: { "@type": "Country", name: "Australia" },
+          availableLanguage: "en-AU",
           currenciesAccepted: "AUD",
         }),
       },
