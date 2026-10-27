@@ -5,6 +5,7 @@ import { useShop } from "@/lib/shop/store";
 
 export const Route = createFileRoute("/collections/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://jsmartbeauty.com.au/collections/" }],
     meta: [
       { title: "Shop All Beauty Collections | Jsmart Beauty" },
       {
