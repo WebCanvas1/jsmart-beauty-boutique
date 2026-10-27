@@ -9,6 +9,7 @@ import type { PromoBanner } from "@/lib/shop/types";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://jsmartbeauty.com.au/" }],
     meta: [
       { title: "Jsmart Beauty | Australian Cosmetics, Makeup & Skincare Online" },
       {
