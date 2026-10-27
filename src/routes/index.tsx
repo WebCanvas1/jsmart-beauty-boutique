@@ -11,16 +11,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://jsmartbeauty.com.au/" }],
     meta: [
-      { title: "Jsmart Beauty | Australian Cosmetics, Makeup & Skincare Online" },
+      { title: "Jsmart Beauty Australia | Makeup, Skincare & Beauty Online" },
       {
         name: "description",
         content:
-          "Discover makeup, skincare, hair care and beauty essentials at Jsmart Beauty. Shipped Australia-wide, free over $75. Prices in AUD.",
+          "Shop makeup, skincare, hair care and beauty essentials online at Jsmart Beauty Australia. Discover our beauty collections with Australia-wide delivery.",
       },
-      { property: "og:title", content: "Jsmart Beauty | Australian Beauty Online" },
+      { property: "og:url", content: "https://jsmartbeauty.com.au/" },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: "Jsmart Beauty Australia | Online Beauty Store" },
       {
         property: "og:description",
-        content: "Makeup, skincare and beauty essentials selected for every style.",
+        content: "Discover makeup, skincare, hair care and beauty essentials at Jsmart Beauty Australia.",
       },
     ],
   }),
@@ -121,7 +123,7 @@ function Home() {
         <div className="absolute inset-0">
           <div className="container-x flex h-full items-center">
             <div className="max-w-lg rounded-xl bg-background/80 p-8 backdrop-blur-sm md:p-10">
-              <p className="eyebrow text-primary">Australian Beauty</p>
+              <p className="eyebrow text-primary">Jsmart Beauty Australia · Online Beauty Store</p>
               <h1 className="mt-3 text-4xl leading-tight md:text-6xl">{homepage.heroTitle}</h1>
               <p className="mt-4 text-sm text-muted-foreground md:text-base">
                 {homepage.heroSubtitle}
