@@ -11,18 +11,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://jsmartbeauty.com.au/" }],
     meta: [
-      { title: "Jsmart Beauty Australia | Makeup, Skincare & Beauty Online" },
+      { title: "Shop Makeup, Skincare & Beauty Online Australia | Jsmart Beauty" },
       {
         name: "description",
         content:
-          "Shop makeup, skincare, hair care and beauty essentials online at Jsmart Beauty Australia. Discover our beauty collections with Australia-wide delivery.",
+          "Shop makeup, skincare, hair care and beauty essentials online at Jsmart Beauty. Explore beauty collections with Australia-wide delivery.",
       },
       { property: "og:url", content: "https://jsmartbeauty.com.au/" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Jsmart Beauty Australia | Online Beauty Store" },
+      { property: "og:title", content: "Shop Makeup & Skincare Online | Jsmart Beauty Australia" },
       {
         property: "og:description",
-        content: "Discover makeup, skincare, hair care and beauty essentials at Jsmart Beauty Australia.",
+        content: "Shop makeup, skincare, hair care and beauty essentials online at Jsmart Beauty. Australia-wide delivery.",
       },
     ],
   }),
